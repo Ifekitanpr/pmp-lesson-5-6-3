@@ -196,3 +196,9 @@
 @media(max-width:850px){.illustrated-reveal{grid-template-columns:1fr}.illustrated-reveal img{height:200px}}
 .centered-cta{margin:24px auto 0;background:#087bfa}
 .hero-layout h1 span{font-size:.72em;line-height:1.12}
+/* Module 5 heading guardrail: long supplied copy must never become an oversized display block. */
+.hero-layout h1{font-size:clamp(38px,3.15vw,50px);line-height:1.04;max-width:720px}
+.hero-layout h2,.wide-page h2,.approach-page h2{font-size:clamp(30px,2.75vw,43px);line-height:1.08;max-width:900px}
+.exam-layout h2{font-size:clamp(28px,2.45vw,38px);line-height:1.1;max-width:680px}
+.hero-layout .lead,.exam-layout .lead{max-width:680px;margin-top:16px;font-size:17px;line-height:1.58}
+@media(max-width:600px){.hero-layout h1{font-size:clamp(34px,9vw,44px)}.hero-layout h2,.wide-page h2,.approach-page h2{font-size:clamp(29px,8vw,38px)}.exam-layout h2{font-size:clamp(27px,7.5vw,36px)}}
